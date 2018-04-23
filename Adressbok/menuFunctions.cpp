@@ -13,7 +13,7 @@ bes mata in ny data.
 void addContact(const char* filename)	
 {
     std::ofstream savefile(filename, std::ios::app);	//Öppnar filen med filnamnet givet av inargumentet och skriver till slutet av den.
-	if(!savefile)	//Om filen inte kunde öppnas, gå ur funktionen
+    if(!savefile)	//Om filen inte kunde öppnas, gå ur funktionen
     {
         std::cout << "Filen kunde inte öppnas. Prova att starta om programmet." << std::endl;	//Informera användaren
         return;	
